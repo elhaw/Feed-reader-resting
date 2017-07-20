@@ -89,20 +89,22 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-          
-        it('Menu changing on click',function(){
-
-                var className = document.body.className ; 
-                expect(className).toBe("menu-hidden");
-            
-
-                $(".menu-icon-link").click();
-                expect(className).not.toBeDefined(); 
-           
-                  });   
-        });
-
        
+
+        it('Menu changing on click',function(){
+                
+                var className = document.body.className ;
+                var menuIcon = document.querySelector(".menu-icon-link");
+                expect(className).toBe("menu-hidden");
+
+                menuIcon.click();
+                expect(className).not.toBe("");
+
+                 menuIcon.click();
+                expect(className).toBe("menu-hidden");
+                           
+             });   
+  });
 
     /* TODO: Write a new test suite named "Initial Entries" */
 
