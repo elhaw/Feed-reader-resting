@@ -120,7 +120,9 @@ $(function() {
          describe('Initial Entries', function() {
 
          	beforeEach(function(done){
-         		loadFeed(0,cb);
+         		loadFeed(0, function(){
+
+         			done();
          		});
 
          	});
