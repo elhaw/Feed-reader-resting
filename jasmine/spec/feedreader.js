@@ -96,13 +96,11 @@ $(function() {
                 expect(className).toBe("menu-hidden");
             
 
-                $(".menu-icon-link").click(function() {
-                expect(className).toBe("");
-
-                });
-
-          });   
-    });
+                $(".menu-icon-link").click();
+                expect(className).not.toBeDefined(); 
+           
+                  });   
+        });
 
        
 
