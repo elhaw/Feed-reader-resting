@@ -93,14 +93,13 @@ $(function() {
         it('Menu changing on click',function(){
 
                 var className = document.body.className ; 
-                $(document).ready(function(){ 
                 expect(className).toBe("menu-hidden");
-               })
+            
 
                 $(".menu-icon-link").click(function() {
                 expect(className).toBe("");
 
-                })
+                });
 
           });   
     });
