@@ -147,24 +147,25 @@ $(function() {
          		loadFeed(0, function(){
 
          		firstFeed = $(".feed").html();
+         		loadFeed(2, function(done){
+
+         	    thirdFeed = $(".feed").html();
+         	    done();
+         	    });
          		done();
 
          	 });
 
          });
-  	
+            	
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
          it('feed is changing after loading feeds',function() {
-         	 loadFeed(2, function(done){
-
-         	  thirdFeed = $(".feed").html();
-         	    expect(firstFeed).not.toEqual(secondFeed);
-         	    done();
-
-         	 });
+         	expect(firstFeed).not.toEqual(thirdFeed);
+         	 
         });
     
     });
