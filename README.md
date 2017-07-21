@@ -14,6 +14,12 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 3. Review the functionality of the application within your browser.
 5. [Jasmine documentation](http://jasmine.github.io).
 
+
+# How to run the this locally
+- Click "Clone in Desktop" / "Download ZIP"
+- Open the folder
+- Open `index.html`
+
 # To pass the project
 
 - RSS feeds are defined in `allFeeds` and are not empty.
