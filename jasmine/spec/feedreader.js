@@ -93,15 +93,14 @@ $(function() {
 
         it('Menu changing on click',function(){
                 
-                var className = document.body.className ;
                 var menuIcon = document.querySelector(".menu-icon-link");
-                expect(className).toBe("menu-hidden");
+                expect($('body').hasClass('menu-hidden')).toBe(true);
 
                 menuIcon.click();
-                expect(className).not.toBe("");
+                expect($('body').hasClass('menu-hidden')).toBe(false);
 
                  menuIcon.click();
-                expect(className).toBe("menu-hidden");
+                expect($('body').hasClass('menu-hidden')).toBe(true);
                            
              });   
   });
