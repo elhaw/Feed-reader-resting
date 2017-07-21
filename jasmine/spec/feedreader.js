@@ -150,7 +150,6 @@ $(function() {
          		loadFeed(2, function(done){
 
          	    thirdFeed = $(".feed").html();
-         	    done();
          	    });
          		done();
 
