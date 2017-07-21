@@ -79,7 +79,7 @@ $(function() {
                     }  
                     
                 return false;
-            }
+            };
               expect(verifyHidden()).toBe(true);
 
          });
