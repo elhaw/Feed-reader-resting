@@ -127,7 +127,7 @@ $(function() {
          	});
 
          	it('at least one entry is loaded',function() {
-         		var entryNumbers =document.getElementsByClassName("entry").length;
+         		var entryNumbers =$(".feed .entry").length;
          		expect(entryNumbers).toBeGreaterThan(0);
 
            	});
