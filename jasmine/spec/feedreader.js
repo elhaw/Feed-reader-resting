@@ -107,22 +107,22 @@ $(function() {
 
 
 
+    	
     	describe('New Feed Selection',function(){
-
-  				var firstFeed, thirdFeed ;
+  				var firstFeed, secondFeed ;
   				beforeEach(function(done){
          			loadFeed(0, function(){
                     	firstFeed = $(".feed").html();
-         				loadFeed(2, function(done){
-         	            	thirdFeed = $(".feed").html();
+         				loadFeed(1, function(){
+         	            	secondFeed = $(".feed").html();
+         	            	done();
          	    		});
-                        done();
          	 		});
-         	});
-            	
+         	   });
 
          it('feed is changing after loading feeds',function() {
-         	expect(firstFeed).not.toEqual(thirdFeed);
+      
+         	expect(firstFeed).not.toEqual(secondFeed);
          	 
         });
     
