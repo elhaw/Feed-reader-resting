@@ -16,9 +16,9 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 
 
 # How to run the this locally
-- Click "Clone in Desktop" / "Download ZIP"
+- Click "Clone in Desktop" or "Download ZIP"
 - Open the folder
-- Open `index.html`
+- Open `index.html` in your browser.
 
 # To pass the project
 
