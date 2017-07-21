@@ -115,13 +115,6 @@ $(function() {
                     	firstFeed = $(".feed").html();
          				loadFeed(2, function(done){
          	            	thirdFeed = $(".feed").html();
-         	            	if (firstFeed === thirdFeed)
-         	            	{
-         	            		console.log("No change");
-         	            	}
-         	            	else {
-         	            		console.log("wooooooooorking");
-         	            	}
          	    		});
                         done();
          	 		});
