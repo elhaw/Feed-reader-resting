@@ -142,18 +142,30 @@ $(function() {
 
     	describe('New Feed Selection',function(){
 
-   	
+  		var firstFeed, thirdFeed ;
+  		beforeEach(function(done){
+         		loadFeed(0, function(){
+
+         		firstFeed = $(".feed").html();
+         		done();
+
+         	 });
+
+         });
+  	
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+         it('feed is changing after loading feeds',function() {
+         	 loadFeed(2, function(done){
 
-         	it('a new feed is loaded',function() {
+         	  thirdFeed = $(".feed").html();
+         	    expect(firstFeed).not.toEqual(secondFeed);
+         	    done();
 
-
-
-
-         	});
-
-		});
+         	 });
+        });
+    
+    });
 });
